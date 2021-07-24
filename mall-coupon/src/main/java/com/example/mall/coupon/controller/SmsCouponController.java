@@ -30,6 +30,14 @@ public class SmsCouponController {
     @Autowired
     private SmsCouponService smsCouponService;
 
+    // 测试Feign远程调用
+    @RequestMapping("/member/list")
+    public R memberCoupons(){
+        SmsCouponEntity smsCouponEntity = new SmsCouponEntity();
+        smsCouponEntity.setCouponName("满100减10");
+        return R.ok().put("coupons",Arrays.asList(smsCouponEntity));
+    }
+
     /**
      * 列表
      */
