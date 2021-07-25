@@ -2,9 +2,8 @@ package com.example.mall.product;
 
 import com.example.mall.product.entity.BrandEntity;
 import com.example.mall.product.service.BrandService;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.diagnostics.analyzer.BeanNotOfRequiredTypeFailureAnalyzer;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
